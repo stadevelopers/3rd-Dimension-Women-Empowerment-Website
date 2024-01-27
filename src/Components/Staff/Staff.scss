@@ -1,0 +1,109 @@
+:root{
+  --primaryColor:#b69f4b;
+  --secondaryColor:#059789;
+  --secHoverColor:#000;
+  --greyColor:#a6a6a6;
+  }
+
+  .staff{
+    background: rgb(241, 241, 241);
+    .btm-container{
+      display: flex;
+      padding: 1rem;
+    .images{
+      padding: 0 1.5rem;
+      img{
+        width: 200px;
+        height: 200px;
+        border-radius: 45%;
+      }
+    }
+     
+    }
+    .staffContainer{
+      margin-top: 4rem;
+      gap: 4rem;
+      display: flex;
+
+      .singleStaff{
+        width: 33%;
+        position: relative;
+        background: white;
+        box-shadow: 0 3px 5px rgb(148, 148, 148) !important;
+        padding: 1.5rem;
+        height: 225px !important;
+        text-align: center;
+        border-radius: 10px;
+        transition: .4s ease;
+
+        &:hover{
+          transform: translateY(-10px);
+        }
+
+        .imgDiv{
+          position: absolute;
+          height: 150px;
+          width: 150px;
+          right: 50%;
+          left: 50%;
+          top: -25%;
+          border-radius: 50%;
+          overflow: hidden;
+          transform: translateX(-50%);
+          border: 10px solid white;
+
+        }
+
+        p{
+          padding: 1rem;
+          line-height: 1.3rem;
+        }
+
+        .name{
+          color: var(--primaryColor);
+          font-weight: 600;
+          padding-top: 5rem;
+          font-size: 14px;
+        }
+
+        .jobTitle{
+          color: var(--secHoverColor);
+          font-size: 12px;
+          padding: .5rem;
+          font-weight: 500;
+        }
+
+        .contact{
+          color: var(--primaryColor);
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .staff{
+      .btm-container{
+        flex-direction: column-reverse !important;
+      }
+    .staffContainer{
+      display: flex;
+      flex-direction: column-reverse !important;
+
+      .singleStaff{
+        width: 50%;
+
+
+        .imgDiv{
+          position: absolute;
+          width: 150px;
+          height: 150px;
+
+        }
+      }
+    }
+  }
+}
+    
+  

@@ -1,0 +1,98 @@
+:root {
+  --primaryColor:#b69f4b;
+  --secondaryColor:#059789;
+  --secHoverColor:#000;
+  --greyColor:#f7f7f7;
+}
+
+.discount {
+  width: 100%;
+}
+.discount .secContainer {
+  height: 400px;
+  padding-bottom: 0rem !important;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discount .secContainer img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.discount .secContainer .textDiv {
+  position: absolute;
+  display: grid;
+  padding: 2rem;
+  color: #f7f7f7;
+  text-align: center;
+  gap: 1rem;
+}
+.discount .secContainer .textDiv .title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+}
+.discount .secContainer .textDiv p {
+  opacity: 1;
+  color: #000;
+}
+.discount .secContainer .textDiv .input_btn {
+  flex-direction: column;
+  gap: 1rem;
+}
+.discount .secContainer .textDiv .input_btn input {
+  background: rgba(158, 255, 245, 0.3725490196);
+  padding: 0.8rem;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 13px;
+  width: 100%;
+  border-radius: 5px;
+}
+.discount .secContainer .textDiv .input_btn input::-moz-placeholder {
+  color: black;
+  font-size: 12px;
+}
+.discount .secContainer .textDiv .input_btn input::placeholder {
+  color: black;
+  font-size: 12px;
+}
+.discount .secContainer .textDiv .input_btn .btn {
+  background: var(--primaryColor);
+  border: none;
+  font-size: 15px;
+  padding: 1rem 2rem;
+  width: 100%;
+  color: white;
+  transition: 0.3s ease;
+}
+.discount .secContainer .textDiv .input_btn .btn:hover {
+  background: var(--secHoverColor);
+}
+
+@media screen and (min-width: 520px) {
+  .discount .secContainer .textDiv {
+    gap: 2rem;
+  }
+  .discount .secContainer .title {
+    font-size: 25px;
+  }
+  .discount .secContainer p {
+    font-size: 18px;
+    max-width: 500px;
+    padding: 0 3rem;
+  }
+  .discount .secContainer .input_btn .btn {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .discount .secContainer .textDiv {
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=Discount.css.map */

@@ -1,0 +1,70 @@
+:root {
+  --primaryColor:#b69f4b;
+  --secondaryColor:#059789;
+  --secHoverColor:#000;
+  --greyColor:#f7f7f7;
+}
+
+.cards {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: var(--greyColor);
+  z-index: 5000;
+}
+.cards .cardContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+.cards .cardContainer .singleCard {
+  transform: translateY(-50px);
+  height: 250px !important;
+  width: 100%;
+  position: relative;
+  transition: 0.5s;
+}
+.cards .cardContainer .singleCard .imgDiv {
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.cards .cardContainer .singleCard .imgDiv img {
+  height: 100%;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.cards .cardContainer .singleCard .textDiv {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  z-index: 5;
+}
+.cards .spanText {
+  text-align: center;
+  transform: translateY(-50px);
+  padding-top: 1.5rem;
+  margin: auto;
+  gap: 0.5rem;
+}
+.cards .spanText:hover {
+  font-weight: 600;
+}
+.cards .spanText:hover .icon {
+  transition: 0.4s;
+  transform: translate(10px);
+}
+
+@media screen and (max-width: 768px) {
+  .cardContainer {
+    display: flex;
+    flex-direction: column-reverse !important;
+    align-items: center;
+    margin: auto;
+  }
+}/*# sourceMappingURL=Cards.css.map */

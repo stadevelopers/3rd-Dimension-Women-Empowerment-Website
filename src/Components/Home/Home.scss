@@ -1,0 +1,117 @@
+:root{
+  --primaryColor:#b69f4b;
+  --secondaryColor:#059789;
+  --secHoverColor:#000;
+  --greyColor:#f7f7f7;
+  }
+
+
+  .home{
+    height: 95vh;
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,1, 0.549)), url(../Assets/banner1.jpg);
+    background-position: center;
+    object-fit: cover !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    row-gap: 3rem;
+
+    .spanText{
+      color: white;
+      font-weight: 500;
+    }
+  
+    .homeTitle{
+      color: white;
+      padding: 2rem 0;
+      font-size: 40px;
+  
+      strong{
+        font-weight: 800;
+      }
+    }
+  
+    .btn{
+      
+    
+      border: 2px solid white ;
+      color: white !important;
+      font-size: 13px;
+      transition: .3s;
+      width: max-content;
+      &:hover{
+        background: #f7f7f7;
+        color: var(--secHoverColor) !important;
+        border: 2px solid white ;
+      }
+    }
+  }
+
+  //MEDIA QUERIES
+
+  @media screen and (min-width:690px){
+    .home{
+
+      .homeText{
+        transform: translateX(5rem)  ;
+      }
+      .spanText{
+        font-weight: 600;
+        font-size: 20px;
+      }
+
+      .homeTitle{
+        color: whitesmoke;
+        padding: 2rem 0;
+        font-size: 45px;
+      }
+
+      .btn{
+        border: 2px solid white;
+        color: white;
+        font-size: 15px;
+        transition: .4s ease;
+      }
+    }
+  }
+
+
+  @media screen and (min-width:1240px){
+      .home{
+        .homeText{
+          
+
+          .spanText{
+            font-size: 25px;
+          }
+
+          .homeTitle{
+            font-size: 70px;
+          }
+
+          .btn{
+            font-size: 23px;
+            transform: translateX(-28rem)
+          }
+        }
+      }
+  }
+
+  @media screen and (max-width:450px){
+    .home{
+      height: 95vh;
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background: linear-gradient(rgba(0,0,0,0.42), rgba(0,0,1, 0.549)), url(../Assets/banner2.jpg);
+    background-position: center;
+    object-fit: cover !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    row-gap: 3rem;
+    }
+}

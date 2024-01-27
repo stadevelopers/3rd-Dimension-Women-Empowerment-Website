@@ -1,0 +1,57 @@
+:root {
+  --primaryColor:#b69f4b;
+  --secondaryColor:#059789;
+  --secHoverColor:#000;
+  --greyColor:#f7f7f7;
+}
+
+.tourContainer1 {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.tourContainer1 img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  align-items: flex-start;
+}
+.tourContainer1 .tourTitle {
+  padding: 10px;
+  font-family: "Poppins" !important;
+}
+
+.tourContainer2 {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+.tourContainer2 img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  align-items: flex-start;
+}
+.tourContainer2 .tourTitle {
+  padding: 10px;
+  font-family: "Poppins";
+}
+
+@media screen and (max-width: 768px) {
+  .tourContainer2 {
+    flex-direction: column-reverse;
+  }
+  .tourContainer2 img {
+    width: 300px;
+    height: 300px;
+    padding-top: 5px;
+  }
+  .tourContainer1 {
+    flex-direction: column;
+  }
+  .tourContainer1 img {
+    padding-top: 5px;
+    width: 300px;
+    height: 350px;
+  }
+}/*# sourceMappingURL=Tour.css.map */
